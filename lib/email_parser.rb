@@ -1,7 +1,7 @@
 require 'pry'
 
 class EmailAddressParser
-  attr_reader :email
+  attr_accessor :email
 
   def initialize(email)
     @email = email
