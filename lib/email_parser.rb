@@ -1,3 +1,5 @@
+require 'pry'
+
 class EmailAddressParser
   attr_reader :email
 
