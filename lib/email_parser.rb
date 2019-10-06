@@ -6,6 +6,7 @@ class EmailAddressParser
   end
 
   def self.parse
-  end 
+    @email.include?(",")
+  end
 
 end
