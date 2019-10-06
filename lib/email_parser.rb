@@ -8,7 +8,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email.include?(",") ? emails = @email.split(",") : emails = @emails.split(" ")
+    @email.include?(",") ? emails = @email.split(", ") : emails = @emails.split(" ")
     emails
   end
 
