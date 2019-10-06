@@ -9,6 +9,7 @@ class EmailAddressParser
 
   def parse
     email_list = @email.sub(",", "").split(" ")
+    binding.pry
     email_list.uniq {|email| email}
   end
 
