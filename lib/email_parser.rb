@@ -8,6 +8,7 @@ class EmailAddressParser
   end
 
   def parse
+    email_list = @email.sub(", ", " ")
     @email.include?(",") ? emails = @email.split(", ") : emails = @email.split(" ")
     emails.uniq {|email| email}
   end
