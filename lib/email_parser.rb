@@ -6,7 +6,7 @@ class EmailAddressParser
   end
 
   def self.parse
-    if @email.include?(",")
+    @email.include?(",") ? emails = @email.split(",") : emails = @emails.split(" ")
   end
 
 end
